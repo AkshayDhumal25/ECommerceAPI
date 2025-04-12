@@ -5,10 +5,13 @@
 //    }
 //}
 
+using System.Text.Json.Serialization;
+
 namespace ECommerceAPI.Models
 {
     public class Product
     {
+        [JsonIgnore]
         public int Id { get; set; }
 
         public string Name { get; set; }
